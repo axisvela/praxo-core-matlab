@@ -4,7 +4,7 @@ Dedicated repository for the MATLAB implementation of PRAXO-CORE: an
 embeddable, MIT-licensed agent execution kernel with policy controls,
 human-in-the-loop approval, checkpoints, events, and tool calling.
 
-- Package: `PRAXO-CORE` (`0.2.1`)
+- Package: `PRAXO-CORE` (`0.3.0`)
 - Registry: MATLAB File Exchange
 - Install: `File Exchange entry 185166`
 - Documentation: https://axisvela.github.io/praxo-core/languages/matlab/
