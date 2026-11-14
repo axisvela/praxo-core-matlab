@@ -8,6 +8,7 @@ human-in-the-loop approval, checkpoints, events, and tool calling.
 - Registry: MATLAB File Exchange
 - Install: `File Exchange entry 185166`
 - Documentation: https://axisvela.github.io/praxo-core/languages/matlab/
+- Examples: https://github.com/axisvela/praxo-core-matlab/tree/main/language/matlab/examples
 - Mirror repository: https://github.com/axisvela/praxo-core-matlab
 - Canonical source: https://github.com/axisvela/praxo-core/tree/main/language/matlab
 - Release index: https://axisvela.github.io/praxo-core/languages/registry-status/
