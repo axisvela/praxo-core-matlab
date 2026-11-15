@@ -65,12 +65,14 @@ Runnable examples live under [`language/matlab/examples`](language/matlab/exampl
 | [checkpoint](language/matlab/examples/checkpoint) | This example uses the MATLAB/Octave Core checkpoint allowlist for a registered payload round trip. |
 | [consumer](language/matlab/examples/consumer) | This starter uses a deterministic model and an in-memory tool. It does not use the network or a model service. Run it from the repository root: |
 | [event-sink](language/matlab/examples/event-sink) | This example uses MATLAB/Octave Core sink composition to fan out events and filter the tool-only stream. |
+| [hitl](language/matlab/examples/hitl) | This example configures `options.interruptOn`, `options.onInterruptDecision`, and `options.onInterrupt` for approve, edit-with-reauthorization, reject, and respond decisions. It... |
 | [identity-policy](language/matlab/examples/identity-policy) | This example binds a trusted principal to policy decisions and rejects missing, role-mismatched, and tenant-mismatched actions. |
 | [live-model](language/matlab/examples/live-model) | This example connects the shared MATLAB/Octave Core to an OpenAI-compatible endpoint through `praxo.openai_compatible`, registers a `get_time(zone)` tool with a small JSON Schem... |
 | [mcp](language/matlab/examples/mcp) | The MATLAB/Octave Core does not bundle an MCP client. This example provides a transport-neutral MCP-shaped client boundary: initialize, `tools/list`, and `tools/call` over a cal... |
 | [provider-fallback](language/matlab/examples/provider-fallback) | This example calls a fallback only after the primary fails and preserves the primary failure when both fail. |
 | [retry](language/matlab/examples/retry) | This example retries a transient failure with a bounded attempt count and keeps the exhausted failure state. |
 | [service](language/matlab/examples/service) | This example defines a transport-neutral request handler with health, principal, and run cases. |
+| [session-checkpoint](language/matlab/examples/session-checkpoint) | This example saves and restores a conversation history across two agent turns. It uses a teaching in-memory store keyed by session id; production storage and retention remain ap... |
 | [streaming](language/matlab/examples/streaming) | This example accumulates streamed chunks and checks that they reconstruct the final output. |
 | [structured-output](language/matlab/examples/structured-output) | This example validates a final JSON answer against a schema and rejects invalid output. |
 
