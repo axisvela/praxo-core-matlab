@@ -9,9 +9,9 @@
 | Package | `PRAXO-CORE` |
 | Registry | [MATLAB File Exchange](https://www.mathworks.com/matlabcentral/fileexchange/185166-praxo-core) |
 | Install | `File Exchange entry 185166` |
-| Source version | `0.5.0` |
+| Source version | `0.6.0` |
 | Published version | `0.3.0` |
-| Source tag | `matlab/v0.5.0` |
+| Source tag | `matlab/v0.6.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/matlab/ |
@@ -63,8 +63,10 @@ Runnable examples live under [`language/matlab/examples`](language/matlab/exampl
 | Example | What it shows |
 | --- | --- |
 | [checkpoint](language/matlab/examples/checkpoint) | This example uses the MATLAB/Octave Core checkpoint allowlist for a registered payload round trip. |
+| [consumer](language/matlab/examples/consumer) | This starter uses a deterministic model and an in-memory tool. It does not use the network or a model service. Run it from the repository root: |
 | [event-sink](language/matlab/examples/event-sink) | This example uses MATLAB/Octave Core sink composition to fan out events and filter the tool-only stream. |
 | [identity-policy](language/matlab/examples/identity-policy) | This example binds a trusted principal to policy decisions and rejects missing, role-mismatched, and tenant-mismatched actions. |
+| [live-model](language/matlab/examples/live-model) | This example connects the shared MATLAB/Octave Core to an OpenAI-compatible endpoint through `praxo.openai_compatible`, registers a `get_time(zone)` tool with a small JSON Schem... |
 | [mcp](language/matlab/examples/mcp) | The MATLAB/Octave Core does not bundle an MCP client. This example provides a transport-neutral MCP-shaped client boundary: initialize, `tools/list`, and `tools/call` over a cal... |
 | [provider-fallback](language/matlab/examples/provider-fallback) | This example calls a fallback only after the primary fails and preserves the primary failure when both fail. |
 | [retry](language/matlab/examples/retry) | This example retries a transient failure with a bounded attempt count and keeps the exhausted failure state. |
