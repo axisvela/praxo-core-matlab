@@ -10,7 +10,7 @@
 | Registry | [MATLAB File Exchange](https://www.mathworks.com/matlabcentral/fileexchange/185166-praxo-core) |
 | Install | `File Exchange entry 185166` |
 | Source version | `0.7.0` |
-| Published version | `0.3.0` |
+| Published version | `0.5.0` |
 | Source tag | `matlab/v0.7.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
