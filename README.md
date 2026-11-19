@@ -9,9 +9,9 @@
 | Package | `PRAXO-CORE` |
 | Registry | [MATLAB File Exchange](https://www.mathworks.com/matlabcentral/fileexchange/185166-praxo-core) |
 | Install | `File Exchange entry 185166` |
-| Source version | `0.7.0` |
+| Source version | `0.8.0` |
 | Published version | `0.5.0` |
-| Source tag | `matlab/v0.7.0` |
+| Source tag | `matlab/v0.8.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/matlab/ |
@@ -48,8 +48,8 @@ See the [full MATLAB README](language/matlab/README.md) for complete installatio
 | Capability | Status | Detail |
 | --- | --- | --- |
 | OpenAI-compatible model | native | `praxo.openai_compatible` using `webwrite`; SSE streaming reassembly |
-| Anthropic model | native | `praxo.anthropic_compatible`; injectable transport; Anthropic SSE streaming |
-| Gemini model | native | `praxo.gemini_compatible`; injectable transport; Gemini SSE streaming |
+| Anthropic model | native | `praxo.anthropic_compatible`; injectable transport; `onDelta` reassembles Anthropic SSE |
+| Gemini model | native | `praxo.gemini_compatible`; injectable transport; `onDelta` reassembles Gemini SSE |
 | MCP client | native (transport seam) | `praxo.mcp_client`; caller supplies a function handle |
 | Harmovela sink | native | `praxo.harmovela_sink` |
 | OpenTelemetry sink | native (transport seam) | `praxo.otel_sink`; caller supplies OTLP/HTTP transport |
