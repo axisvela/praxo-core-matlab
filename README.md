@@ -12,8 +12,6 @@
 | Source version | `0.8.0` |
 | Published version | `0.5.0` |
 | Source tag | `matlab/v0.8.0` |
-| Tutorial tag | `matlab/tutorial/v0.1.0` |
-| Examples tag | `matlab/examples/v0.1.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/matlab/ |
