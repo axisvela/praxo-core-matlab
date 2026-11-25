@@ -12,6 +12,8 @@
 | Source version | `0.8.0` |
 | Published version | `0.5.0` |
 | Source tag | `matlab/v0.8.0` |
+| Tutorial tag | `matlab/tutorial/v0.1.0` |
+| Examples tag | `matlab/examples/v0.1.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/matlab/ |
@@ -77,6 +79,16 @@ Runnable examples live under [`language/matlab/examples`](language/matlab/exampl
 | [session-checkpoint](language/matlab/examples/session-checkpoint) | This example saves and restores a conversation history across two agent turns. It uses a teaching in-memory store keyed by session id; production storage and retention remain ap... |
 | [streaming](language/matlab/examples/streaming) | This example accumulates streamed chunks and checks that they reconstruct the final output. |
 | [structured-output](language/matlab/examples/structured-output) | This example validates a final JSON answer against a schema and rejects invalid output. |
+
+## Scenario Tutorials
+
+Scenario-oriented tutorials live under `language/matlab/Tutorial`.
+
+| Path | What it shows |
+| --- | --- |
+| [Tutorial](language/matlab/Tutorial) | Application tutorials live in `Tutorial/`, alongside focused `language/go/examples/`. |
+| [data-quality](language/matlab/Tutorial/data-quality) | A bounded data-quality tutorial. It computes fixed mean/median/outlier statistics, then lets Core choose normal or outlier review. No source data is modified. |
+| [signal-trends](language/matlab/Tutorial/signal-trends) | A native MATLAB/Octave signal-analysis tutorial. The Agent has one fixed tool, `review_signal`, which computes metrics over a fixed signal and returns a structured report with a... |
 
 ## Verify
 
