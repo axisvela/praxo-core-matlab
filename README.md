@@ -88,6 +88,8 @@ Scenario-oriented tutorials live under `language/matlab/Tutorial`. Planning cont
 | [data-quality](language/matlab/Tutorial/data-quality) | A bounded data-quality tutorial. It computes fixed mean/median/outlier statistics, then lets Core choose normal or outlier review. No source data is modified. |
 | [signal-trends](language/matlab/Tutorial/signal-trends) | A native MATLAB/Octave signal-analysis tutorial. The Agent has one fixed tool, `review_signal`, which computes metrics over a fixed signal and returns a structured report with a... |
 
+## Reference Applications
+
 No accepted end-to-end reference application is recorded for this language yet. Candidate goals are tracked in the [Reference Application Portfolio](https://axisvela.github.io/praxo-core/project/roadmap/#reference-application-portfolio).
 
 ## Verify
