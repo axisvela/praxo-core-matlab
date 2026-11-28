@@ -13,6 +13,6 @@ for i = 1:numel(grants)
     if ~any(strcmp(access, {'read', 'write', 'readwrite'}))
         error('praxo:policy', 'POLICY_ERROR');
     end
-    checker.grants{end + 1} = struct('root', praxo.normalize_path(root), 'access', access);
+    checker.grants{end + 1} = struct('root', praxo.resolve_path(root), 'access', access);
 end
 end

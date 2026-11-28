@@ -6,7 +6,7 @@ if isempty(checker.grants)
     decision = struct('allowed', false, 'reason', 'no allowed roots');
     return;
 end
-resolved = praxo.normalize_path(target);
+resolved = praxo.resolve_path(target);
 for i = 1:numel(checker.grants)
     grant = checker.grants{i};
     if path_within(grant.root, resolved) && access_allows(grant.access, need)

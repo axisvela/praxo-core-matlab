@@ -1,5 +1,12 @@
 # MATLAB Core Release Notes
 
+## Unreleased
+
+### Security
+
+- Resolve policy paths to their real filesystem location, including symlinks
+  and dangling links, before containment checks.
+
 ## 0.9.0 - 2026-11-26
 
 Source tag `matlab/v0.9.0`.

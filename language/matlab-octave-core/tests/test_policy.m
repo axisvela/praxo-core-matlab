@@ -43,6 +43,39 @@ assert(strcmp(praxo.normalize_path('/../../allowed'), '/allowed'));
 parent = praxo.path_checker(struct('root', '../allowed', 'access', 'read'));
 assert(praxo.path_allowed(parent, '../allowed/secret', 'read'));
 assert(~praxo.path_allowed(parent, 'allowed/secret', 'read'));
+if ispc
+    rejected = false;
+    try
+        drive = praxo.path_checker(struct('root', 'allowed', 'access', 'read'));
+        praxo.path_check(drive, 'C:evil.txt', 'read');
+    catch
+        rejected = true;
+    end
+    assert(rejected);
+end
+tmp = tempname();
+mkdir(tmp);
+mkdir(fullfile(tmp, 'root'));
+mkdir(fullfile(tmp, 'outside'));
+fid = fopen(fullfile(tmp, 'outside', 'secret.txt'), 'w');
+fputs(fid, 'secret');
+fclose(fid);
+linked = false;
+try
+    symlink(fullfile(tmp, 'outside'), fullfile(tmp, 'root', 'link'));
+    linked = true;
+catch
+end
+if linked
+    linked_checker = praxo.path_checker(struct('root', fullfile(tmp, 'root'), 'access', 'readwrite'));
+    assert(~praxo.path_allowed(linked_checker, fullfile(tmp, 'root', 'link', 'secret.txt'), 'read'));
+    try
+        symlink(fullfile(tmp, 'outside', 'new.txt'), fullfile(tmp, 'root', 'dangling'));
+        assert(~praxo.path_allowed(linked_checker, fullfile(tmp, 'root', 'dangling'), 'write'));
+    catch
+    end
+end
+rmdir(tmp, 's');
 disp('test_policy passed');
 end
 
